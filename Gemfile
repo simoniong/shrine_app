@@ -39,6 +39,8 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-rails'
+  gem 'capybara-selenium'
 end
 
 group :development do
@@ -56,7 +58,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'shrine'
 gem "aws-sdk", "~> 2.1"
 gem "roda"
-
-group :development, :test do
-  gem 'rspec-rails'
-end
