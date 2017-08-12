@@ -10,9 +10,11 @@
       </ul>
     </div>
   <% end %>
+
   <%= form.label :name %>
   <%= form.text_field :name %>
   <%= form.label :photo %>
+  <%= form.hidden_field :photo, value: product.cached_photo_data %>
   <%= form.file_field :photo %>
   <div class="actions">
     <%= form.submit %>
