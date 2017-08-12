@@ -54,3 +54,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'shrine'
+gem "aws-sdk", "~> 2.1"
+gem "roda"
