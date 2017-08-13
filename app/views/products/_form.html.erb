@@ -11,12 +11,15 @@
     </div>
   <% end %>
 
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-  <br/>
-  <%= form.label :photo %>
-  <%= form.hidden_field :photo, value: product.cached_photo_data %>
-  <%= form.file_field :photo %>
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :product_name %>
+  </div>
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.hidden_field :photo, value: product.cached_photo_data %>
+    <%= form.file_field :photo, id: :product_photo %>
+  </div>
   <br/>
   <div class="actions">
     <%= form.submit %>

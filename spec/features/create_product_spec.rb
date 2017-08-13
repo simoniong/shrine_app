@@ -8,8 +8,8 @@ RSpec.describe 'create product', type: :feature do
     expect(page).to have_field 'Name'
     expect(page).to have_field 'Photo'
     fill_in 'Name', with: 'product name'
-    attach_file stub_image
-    click_button 'Create product'
-    expect(page).to have_content 'create product successfully'
+    attach_file 'Photo', stub_image
+    click_button 'Create Product'
+    expect(page).to have_content 'Product was successfully created'
   end
 end
