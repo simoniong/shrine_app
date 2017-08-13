@@ -6,6 +6,9 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 require "selenium/webdriver"
+require 'capybara/rails'
+require 'capybara/rspec'
+require 'capybara-screenshot/rspec'
 
 Capybara.register_driver :chrome do |app|
   Capybara::Selenium::Driver.new(app, browser: :chrome)

@@ -13,9 +13,11 @@
 
   <%= form.label :name %>
   <%= form.text_field :name %>
+  <br/>
   <%= form.label :photo %>
   <%= form.hidden_field :photo, value: product.cached_photo_data %>
   <%= form.file_field :photo %>
+  <br/>
   <div class="actions">
     <%= form.submit %>
   </div>

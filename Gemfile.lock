@@ -59,6 +59,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    capybara-screenshot (1.0.14)
+      capybara (>= 1.0, < 3)
+      launchy
     capybara-selenium (0.0.6)
       capybara
       selenium-webdriver
@@ -84,6 +87,8 @@ GEM
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
     jmespath (1.3.1)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -213,6 +218,7 @@ DEPENDENCIES
   aws-sdk (~> 2.1)
   byebug
   capybara (~> 2.13)
+  capybara-screenshot
   capybara-selenium
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
