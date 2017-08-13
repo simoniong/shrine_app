@@ -5,7 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'jquery-ui-rails'
+gem 'jquery-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
 # Use sqlite3 as the database for Active Record
@@ -39,7 +40,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '=3.5.2'
   gem 'capybara-selenium'
   gem 'capybara-screenshot'
 end
