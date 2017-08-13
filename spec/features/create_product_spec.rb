@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'create product', type: :feature do
+
   it 'create product successfully', js: true do
     visit root_path
     click_link 'New'
